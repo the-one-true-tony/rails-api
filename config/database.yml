@@ -81,5 +81,7 @@ test:
 production:
   <<: *default
   database: rails-api_production
-  username: rails-api
-  password: <%= ENV['RAILS-API_DATABASE_PASSWORD'] %>
+  username: tony
+  password: password
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
